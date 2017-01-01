@@ -1,0 +1,155 @@
+<html>
+	<head>
+		<title>Facts. Simple.</title>
+		<!-- TODO: insert meta tags -->
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/static/bulma.css">
+		<link rel="stylesheet" type="text/css" href="/static/font-awesome.min.css">
+		<style>
+			.hero.is-dark {
+				/* XXX: change bulma instead */
+				background-color: #131313;
+			}
+			.message {
+				margin-top: 20px;
+			}
+			.navigation h1 {
+				margin-top: 15px;
+				margin-bottom: 15px !important;
+			}
+			.navigation hr {
+				margin-top: 0px !important;
+				margin-bottom: 10px;
+			}
+			.category img {
+				vertical-align: middle;
+				margin-right: 10px;
+				filter: brightness(200%);
+			}
+			.category span {
+				font-size: 15px;
+			}
+			.category {
+				margin-top: 5px;
+				margin-bottom: 5px;
+				padding: 5px;
+				color: white;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="hero is-dark">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<h1 class="title is-2">
+						<a href="/"><strong>FACTS. SIMPLE.</strong></a>
+					</h1>
+					<h2 class="subtitle is-6">
+						Everything. Sourced. Checked. Simple.
+					</h2>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="columns is-centered">
+					<div class="column is-7">
+					<div id="motd" class="column is-full-desktop">
+						<div class="notification is-info">
+							<button class="delete"></button>
+							If a little knowledge is dangerous, where is the man who has so much as to be out of danger? - T. H. Huxley
+						</div>
+					</div>
+						<div class="column is-full-desktop">
+							<div class="box">
+								<h1 class="title">
+									Multiple sunrises
+								</h1>
+								<h2 class="subtitle is-6">
+									2016-12-28 <a href="/category/index.html"></a>
+								</h2>
+								<figure class="image">
+									<img src="/static/imgs/257.jpg">
+								</figure>
+								<article class="message">
+									<div class="message-body">
+										Fact Source(s):
+										<ul>
+										<li><a href="http://www.heavens-above.com/orbit.aspx?satid=25544">Heavens Above</a></li>
+										</ul>
+									</div>
+								</article>
+								<article class="message">
+									<div class="message-body">
+									As the multiple sunrises and sunsets would confuse the body&#039;s biological clock, the windows are covered to give the impression of darkness. The space station conforms to Coordinated Universal Time (UTC), waking at 06:00 and sleeping from 21:30.
+									</div>
+								</article>
+								<article class="message">
+									<div class="message-body">
+									<a href="https://pixabay.com/en/sunrise-international-space-station-894183/">Photo Source</a><br>
+									</div>
+								</article>
+								<i class="fa fa-facebook-official"></i> <i class="fa fa-twitter"></i> <i class="fa fa-linkedin"></i> <i class="fa fa-pinterest"></i>
+							</div>
+						</div>
+					</div>
+				<div class="column navigation">
+					<div class="column is-full-desktop">
+						<h1 class="title">Some more facts</h1>
+						<hr />
+						<ul>
+							<li>#150 <strong>Turkey Dinosaurs</strong></li>
+							<li>#149 Mango Past</li>
+							<li>#148 Cooking Green</li>
+						</ul>
+						<h1 class="title">Categories</h1>
+						<hr />
+						<ul>
+							<li class="category" style="background-color: hsl(217, 70.8%, 52.9%);">
+								<a href="/category/Engineering.html">
+									<img src="/static/imgs/cat_engineering.png"><span>Engineering</span>
+								</a>
+							</li>
+							<li class="category" style="background-color: hsl(357, 70.8%, 52.9%);"><img src="/static/imgs/cat_environment.png"><span>Environment</span></li>
+							<li class="category" style="background-color: hsl(127, 70.8%, 52.9%);"><img src="/static/imgs/cat_film.png"><span>Film</span></li>
+							<li class="category" style="background-color: hsl(040, 70.8%, 52.9%);"><img src="/static/imgs/cat_food_and_drink.png"><span>Food and Drink</span></li>
+							<li class="category" style="background-color: hsl(217, 70.8%, 52.9%);">
+								<a href="/category/Humanity.html">
+									<img src="/static/imgs/cat_humanity.png"><span>Humanity</span>
+								</a>
+							</li>
+						</ul>
+						<h1 class="title">Follow this</h1>
+						<hr />
+						<h1 class="title">
+							<i class="fa fa-facebook-square"></i>
+							<i class="fa fa-instagram"></i>
+						</h1>
+					</div>
+				</div>				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="content has-text-centered">
+					<p>
+						Project initiated Monday the 22nd of August 2016.
+					</p>
+					<p>
+						<a href="/contact.html">Contact</a> | Disclosure | <a href="/privacy.html">Privacy Policy</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {
+			var motd = document.getElementById("motd");
+			motd.addEventListener("click", function() {
+				// hide the message of the day
+				motd.style.display = "none";
+			});
+		};
+	</script>
+</html>

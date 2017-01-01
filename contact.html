@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<title>Facts. Simple.</title>
+		<!-- TODO: insert meta tags -->
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/static/bulma.css">
+		<link rel="stylesheet" type="text/css" href="/static/font-awesome.min.css">
+		<style>
+			.hero.is-dark {
+				/* XXX: change bulma instead */
+				background-color: #131313;
+			}
+			.message {
+				margin-top: 20px;
+			}
+			.navigation h1 {
+				margin-top: 15px;
+				margin-bottom: 15px !important;
+			}
+			.navigation hr {
+				margin-top: 0px !important;
+				margin-bottom: 10px;
+			}
+			.category img {
+				vertical-align: middle;
+				margin-right: 10px;
+				filter: brightness(200%);
+			}
+			.category span {
+				font-size: 15px;
+			}
+			.category {
+				margin-top: 5px;
+				margin-bottom: 5px;
+				padding: 5px;
+				color: white;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="hero is-dark">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<h1 class="title is-2">
+						<a href="/"><strong>FACTS. SIMPLE.</strong></a>
+					</h1>
+					<h2 class="subtitle is-6">
+						Everything. Sourced. Checked. Simple.
+					</h2>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="columns is-centered">
+					<div class="column">
+					<div id="motd" class="column is-full-desktop">
+						<div class="notification is-info">
+							<button class="delete"></button>
+							If a little knowledge is dangerous, where is the man who has so much as to be out of danger? - T. H. Huxley
+						</div>
+					</div>
+						<div class="column is-full-desktop">
+							<div class="box">
+								<h1 class="title">
+									Contact
+								</h1>
+								<h2 class="subtitle is-6">
+									Really hello
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="content has-text-centered">
+					<p>
+						Project initiated Monday the 22nd of August 2016.
+					</p>
+					<p>
+						<a href="/contact.html">Contact</a> | Disclosure | <a href="/privacy.html">Privacy Policy</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {
+			var motd = document.getElementById("motd");
+			motd.addEventListener("click", function() {
+				// hide the message of the day
+				motd.style.display = "none";
+			});
+		};
+	</script>
+</html>
