@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<title>Facts. Simple.</title>
+		<!-- TODO: insert meta tags -->
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/static/bulma.css">
+		<link rel="stylesheet" type="text/css" href="/static/font-awesome.min.css">
+		<style>
+			.hero.is-dark {
+				/* XXX: change bulma instead */
+				background-color: #131313;
+			}
+			.message {
+				margin-top: 20px;
+			}
+			.navigation h1 {
+				margin-top: 15px;
+				margin-bottom: 15px !important;
+			}
+			.navigation hr {
+				margin-top: 0px !important;
+				margin-bottom: 10px;
+			}
+			.category img {
+				vertical-align: middle;
+				margin-right: 10px;
+				filter: brightness(200%);
+			}
+			.category span {
+				font-size: 15px;
+			}
+			.category {
+				margin-top: 5px;
+				margin-bottom: 5px;
+				padding: 5px;
+				color: white;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="hero is-dark">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<h1 class="title is-2">
+						<a href="/"><strong>FACTS. SIMPLE.</strong></a>
+					</h1>
+					<h2 class="subtitle is-6">
+						Everything. Sourced. Checked. Simple.
+					</h2>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="columns is-full-desktop">
+					<div class="column">
+					<div id="motd" class="column is-full-desktop">
+						<div class="notification is-info">
+							<button class="delete"></button>
+							&#039;If a little knowledge is dangerous, where is the man who has so much as to be out of danger?&#039;&#039; - T. H. Huxley
+						</div>
+					</div>
+						<div class="column is-full-desktop">
+							<div class="box">
+								<h1 class="title">
+									Disclosure Policy
+								</h1>
+								<ol>
+									<p class="legalheader">Term of Effect</p>
+    								<li>This policy is valid from 14th December, 2016</li>
+    								<p class="legalheader">Background</p>
+    								<li>This blog is a factual blog written and edited by myself. For questions about this blog, please contact Dan Rose (admin@facts-simple.co.uk).</li>
+                                    <p class="legalheader">Governing Jurisdiction</p>
+                                    <li>The company behind this site, its staff and all beneficiaries of compensation are based in the United Kingdom and therefore subject to its laws.</li>
+                                    <p class="legalheader">Independence of Published Posts</p>
+                                    <li>This blog does at times accept forms of cash advertising, sponsorship, paid insertions or other forms of compensation.</li>
+                                    <p class="legalheader">Applicable Law</p>
+                                    <li>This blog abides by word of mouth marketing standards. We believe in honesty of relationship, opinion and identity. The compensation received may influence the advertising content, topics or posts made in this blog. In order to comply with the Advertising Standards Agency's regulations all content that is in some way sponsored or influenced by compensation has to be clearly identified as such in a foolproof manner.</li>
+                                    <p class="legalheader">Factual Nature of Published Posts</p>
+                                    <li>The owner(s) of this blog is not compensated to provide opinion on products, services, websites and various other topics. The views and opinions expressed on this blog are purely objective, factual information corresponds to factual sources. If we claim or appear to be experts on a certain topic or product or service area, we will only endorse products or services that we believe, based on our expertise, are worthy of such endorsement. Any product claim, statistic, quote or other representation about a product or service should be verified with the manufacturer or provider.</li>
+                                    <p class="legalheader">Conflicts of Interest</p>
+                                    <li>This blog does contain content which might present a conflict of interest. This content will always be identified.</li>
+                                    <p class="legalheader">Titles/Headings</p>
+                                    <li>Headings are inserted for the convenience of the reader(s) and/or authors only and are not to be considered when interpreting this Policy.</li>
+                                    <p class="legalheader">Point of Contact</p>
+                                    <li>All inquiries relating to this policy and Freedom of Information Requests should be directed towards:</li>
+                                    <p>Dan Rose<br>
+                                    admin@facts-simple.co.uk<br>
+                                    Facts. Simple.</p>
+                                    </ol>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="content has-text-centered">
+					<p>
+						Project initiated Monday the 22nd of August 2016.
+					</p>
+					<p>
+						<a href="/contact.html">Contact</a> | <a href="/disclosure.html">Disclosure</a> | <a href="/privacy.html">Privacy Policy</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {
+			var motd = document.getElementById("motd");
+			motd.addEventListener("click", function() {
+				// hide the message of the day
+				motd.style.display = "none";
+			});
+		};
+	</script>
+</html>
